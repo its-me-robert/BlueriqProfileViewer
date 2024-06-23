@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    basePath: '/BlueriqProfileViewer',
     reactStrictMode: true,
-    distDir: 'build',
- }
+}
 export default nextConfig;
