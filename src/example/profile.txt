@@ -1,0 +1,34 @@
+<profile appVersion="1.0" appName="Widget_CRMService">
+	<entity instanceid="92211ff9-43d3-4293-8e31-ac00db1e9251" name="Banaan" id="Banaan">
+		<attribute name="Banaan.Vorm" source="USER">Krom</attribute>
+		<attribute name="Banaan.Kokosnoots" source="USER">
+			<value>Kokosnoot|d51d2fac-19db-4ddc-bf17-fa178c2748ef|</value>
+			<value>Kokosnoot|2023c118-7493-4b05-b33d-8d8098448d61|</value>
+			<value>Kokosnoot|717775c2-ed0d-46c1-a975-89a357df1af3|</value>
+			<value>Kokosnoot|9ffbe981-b455-43c7-8368-c3e8811eb1a4|</value>
+		</attribute>
+		<attribute name="Banaan.Kleur" source="DEFAULT">Geel</attribute>
+		<attribute name="Banaan.Gewicht" source="UNKNOWN"/>
+	</entity>
+	<entity instanceid="d51d2fac-19db-4ddc-bf17-fa178c2748ef" name="Kokosnoot" id="Kokosnoot">
+		<attribute name="Kokosnoot.Vorm" source="USER">Rond</attribute>
+	</entity>
+	<entity instanceid="2023c118-7493-4b05-b33d-8d8098448d61" name="Kokosnoot" id="Kokosnoot">
+		<attribute name="Kokosnoot.Vorm" source="USER">Rond</attribute>
+	</entity>
+	<entity instanceid="717775c2-ed0d-46c1-a975-89a357df1af3" name="Kokosnoot" id="Kokosnoot">
+		<attribute name="Kokosnoot.Vorm" source="USER">Rond</attribute>
+	</entity>
+	<entity instanceid="9ffbe981-b455-43c7-8368-c3e8811eb1a4" name="Kokosnoot" id="Kokosnoot">
+		<attribute name="Kokosnoot.Vorm" source="USER">Rond</attribute>
+	</entity>
+	<entity instanceid="38d60339-dbd3-4160-b2a1-e2800da0fa9a" name="@User@" id="@User@">
+		<attribute name="@User@.teams" source="USER"/>
+		<attribute name="@User@.roles" source="USER">
+			<value>groenteboer</value>
+		</attribute>
+		<attribute name="@User@.id" source="USER">Robert</attribute>
+		<attribute name="@User@.tenant" source="USER"/>
+		<attribute name="@User@.userName" source="USER">Robert</attribute>
+	</entity>
+</profile>
