@@ -84,7 +84,7 @@ export default function ProfileViewer() {
             </span>
           </div>
           <div className="text-sm text-gray-600">
-            <p>Disclaimer: All operations are performed client-side. The only information recorded for security reasons is the client's IP address.</p>
+          <p>Disclaimer: All operations are performed client-side. The only information recorded for security reasons is the client&apos;s IP address.</p>
           </div>
         </div>
       ) : (
