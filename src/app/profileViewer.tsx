@@ -69,12 +69,27 @@ export default function ProfileViewer() {
   return (
     <main className="flex min-h-screen items-center justify-center">
       {!filteredEntities?.length ? (
-        <div className="w-full max-w-lg p-10">
-          <FileUploader onFileSelect={handleFileSelect} />
+        <div className="w-full max-w-lg p-10 text-center">
+          <div className="mt-5">
+            <FileUploader onFileSelect={handleFileSelect} />
+          </div>
+          <div className="mb-5">
+            <a href="https://github.com/its-me-robert/BlueriqProfileViewer" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center gap-2 text-blue-600 hover:text-blue-800">
+              <span role="img" aria-label="GitHub">🐙</span> View the repository on GitHub
+            </a>
+          </div>
+          <div className="mb-5">
+            <span className="flex justify-center items-center gap-2 text-pink-600">
+              <span role="img" aria-label="Heart">❤️</span> Hosted on GitHub Pages
+            </span>
+          </div>
+          <div className="text-sm text-gray-600">
+            <p>Disclaimer: All operations are performed client-side. The only information recorded for security reasons is the client's IP address.</p>
+          </div>
         </div>
       ) : (
         <div className="flex w-full p-24 min-h-screen">
-          <div className="flex flex-col w-1/3">
+          <div className="flex flex-col w-1/3 pr-4">
             <FileUploader onFileSelect={handleFileSelect} />
             <SearchInput searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
             <EntityList entities={filteredEntities} />

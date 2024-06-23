@@ -2,6 +2,10 @@
 
 This is a Next.js project designed to showcase and manage user profiles efficiently. Built with the power of Next.js, React, and TailwindCSS, it offers a modern, responsive user interface for viewing and uploading user profiles.
 
+## Project Overview
+
+The application is currently accessible at [https://its-me-robert.github.io/BlueriqProfileViewer/](https://its-me-robert.github.io/BlueriqProfileViewer/).
+
 ## Features
 
 - **Dynamic User Profiles**: View detailed information about users through dynamic profiles.

@@ -18,7 +18,7 @@ const EntityDetails = () => {
   }
 
   return (
-    <div className="border border-gray-300 rounded-lg p-6 my-6 shadow-lg bg-white">
+    <div className="border border-gray-300 rounded-lg p-6 shadow-lg bg-white">
       <h2 className="text-xl font-semibold text-gray-800 mb-4">{selectedEntity?.name}</h2>
       <ul>
         {selectedEntity?.attributes.map((val, index) => {
