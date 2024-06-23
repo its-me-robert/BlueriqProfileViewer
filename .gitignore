@@ -129,4 +129,3 @@ dist
 .yarn/install-state.gz
 .pnp.*
 next-env.d.ts
-build/*
