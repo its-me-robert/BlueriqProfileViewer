@@ -16,8 +16,19 @@ const EntityList = ({ entities }: { entities: Entity[] }) => {
     }, {} as { [key: string]: Entity[] });
   }, [entities]);
 
-  const groupedEntitiesArray = useMemo(() => Object.entries(groupedEntities).map(([name, entities]) => ({ name, entities })), [groupedEntities]);
+  const groupedEntitiesArray = useMemo(() => {
+    const array = Object.entries(groupedEntities).map(([name, entities]) => ({ name, entities }));
 
+    // Sort the groups alphabetically by their names
+    array.sort((a, b) => a.name.localeCompare(b.name));
+
+    // sort entities within each group if needed
+    array.forEach(group => {
+      group.entities.sort((a, b) => a.instanceid.localeCompare(b.instanceid));
+    });
+
+    return array;
+  }, [groupedEntities]);
 
   useEffect(() => {
     if (selectedEntity) {
