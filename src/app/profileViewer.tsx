@@ -48,7 +48,12 @@ export default function ProfileViewer() {
       const reader = new FileReader();
       reader.onload = (e: ProgressEvent<FileReader>) => {
         if (e.target && e.target.result) {
-          const text = e.target.result.toString();
+          let text = e.target.result.toString();
+
+          //decode base64 encoded files
+          if (isBase64Encoded(text)) {
+            text = atob(text);
+          }
 
           parseXMLFile(text)
             .then(parsedEntities => {
@@ -64,6 +69,11 @@ export default function ProfileViewer() {
       };
       reader.readAsText(file);
     }
+  };
+
+  const isBase64Encoded = (text: string): boolean => {
+    const regex = /^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)?$/;
+    return regex.test(text);
   };
 
   return (
@@ -84,7 +94,7 @@ export default function ProfileViewer() {
             </span>
           </div>
           <div className="text-sm text-gray-600">
-          <p>Disclaimer: All operations are performed client-side. The only information recorded for security reasons is the client&apos;s IP address.</p>
+            <p>Disclaimer: All operations are performed client-side. The only information recorded for security reasons is the client&apos;s IP address.</p>
           </div>
         </div>
       ) : (
