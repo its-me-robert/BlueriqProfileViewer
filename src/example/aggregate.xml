@@ -1,0 +1,30 @@
+<aggregate type="Citroen">
+    <entity type="Citroen" root="true" id="ef6c78f7-0455-47b2-8010-240ba79443e0">
+        <relation name="Appels" multivalue="true">
+            <value>6b7513b6-0a7d-4bf8-a293-0298efce42c3</value>
+            <value>390a4f81-bbaa-489f-bf70-56bac4474520</value>
+            <value>b6e51caf-85d7-4380-b79a-6d5bbc6727fb</value>
+        </relation>
+        <attribute name="GepluktOp" multivalue="false">2024-06-23T17:06:43,000</attribute>
+        <attribute name="GekochtOp" multivalue="false"></attribute>
+        <attribute name="VerkrijgbaarBij" multivalue="true">
+            <value>Robert</value>
+            <value>Rob</value>
+        </attribute>
+    </entity>
+    <entity type="Appel" root="false" id="6b7513b6-0a7d-4bf8-a293-0298efce42c3">
+        <attribute name="Kleur" multivalue="false">Groen</attribute>
+        <attribute name="AppelId" multivalue="false">49591</attribute>
+        <attribute name="Vorm" multivalue="false">Rond</attribute>
+    </entity>
+    <entity type="Appel" root="false" id="390a4f81-bbaa-489f-bf70-56bac4474520">
+        <attribute name="Kleur" multivalue="false">Groen</attribute>
+        <attribute name="AppelId" multivalue="false">49592</attribute>
+        <attribute name="Vorm" multivalue="false">Rond</attribute>
+    </entity>
+    <entity type="Appel" root="false" id="b6e51caf-85d7-4380-b79a-6d5bbc6727fb">
+        <attribute name="Kleur" multivalue="false">Groen</attribute>
+        <attribute name="AppelId" multivalue="false">49593</attribute>
+        <attribute name="Vorm" multivalue="false">Rond</attribute>
+    </entity>
+</aggregate>

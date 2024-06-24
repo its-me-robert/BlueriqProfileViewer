@@ -33,7 +33,7 @@ const FileUploader: React.FC<FileUploaderProps> = ({ onFileSelect }) => {
       className="border-4 border-dotted border-gray-400 rounded-md p-6 w-full text-center mb-4 cursor-pointer hover:bg-gray-50"
       onClick={triggerFileUpload}
     >
-      <p className="text-gray-800 text-lg font-semibold">Blueriq profiel bestand uploaden of slepen</p>
+      <p className="text-gray-800 text-lg font-semibold">Blueriq profiel of aggregaat bestand uploaden of slepen</p>
       {fileName && <div className="mt-1 text-gray-600">{fileName}</div>}
       <input
         type="file"
